@@ -26,6 +26,7 @@ github.com/aaronland/go-image-tools v0.1.3/go.mod h1:KPCUeAHhGQOjEecfYcOaTHOf8bg
 github.com/aaronland/go-image-transform v0.0.0-20200215193528-9bb7b64c2728/go.mod h1:VVvOHA0CFnb4+eTXTA4D5XEd36tFWUUR10ArmtpoYkM=
 github.com/aaronland/go-image-transform v0.0.0-20200216021135-f5c5cf8fc134 h1:BhwB2oRf02Pk6jst/H/mvJEHPpV+PMMjXghGhVkI5h4=
 github.com/aaronland/go-image-transform v0.0.0-20200216021135-f5c5cf8fc134/go.mod h1:VVvOHA0CFnb4+eTXTA4D5XEd36tFWUUR10ArmtpoYkM=
+github.com/aaronland/go-json-query v0.0.1/go.mod h1:dGc7y824R93ugQMTldL7PFD/SPVGPwKdqrUJFLE/ILU=
 github.com/aaronland/go-roster v0.0.1/go.mod h1:AcovpxlG1XxJxX2Fjqlm63fEIBhCjEIBV4lP87FZDmI=
 github.com/aaronland/go-roster v0.0.2 h1:2Fu7v4VQLRLRL/Zgr6R9S5JxsW75Ab/K88QtMVX532s=
 github.com/aaronland/go-roster v0.0.2/go.mod h1:AcovpxlG1XxJxX2Fjqlm63fEIBhCjEIBV4lP87FZDmI=
@@ -33,6 +34,8 @@ github.com/aaronland/go-wunderkammer v0.0.2 h1:IAVkoOd/ltQKkjUsIn99dy9ue3AeEr30Z
 github.com/aaronland/go-wunderkammer v0.0.2/go.mod h1:lx8nJO8Zz8yDKs3VwKS9YhnBvOac0UCxMsxr+4jBuxU=
 github.com/aaronland/go-wunderkammer v0.0.4 h1:ruwiXgqdXO1yeP2xO6gWxYG16ImRK6H+vw7M/k9laIU=
 github.com/aaronland/go-wunderkammer v0.0.4/go.mod h1:Bii4kJgWlEfeaKy5DTw2zVTfsQ3xb4HI4m00sXKtQc4=
+github.com/aaronland/go-wunderkammer v0.0.5 h1:6RucgRUChKuRjUknVNURZjRoG3IxgQ4vKdyMTe64nY8=
+github.com/aaronland/go-wunderkammer v0.0.5/go.mod h1:DeyuzEzSZ59ikUbAQ+ulHRMLxTx4Nz7Q2uA9neLvnbs=
 github.com/akrylysov/algnhsa v0.0.0-20190319020909-05b3d192e9a7/go.mod h1:HhzjNA0EjUWcwHTUMwqrpeAdIF3gRmpH0HpWx1hYJSc=
 github.com/andybalholm/cascadia v1.1.0/go.mod h1:GsXiBklL0woXo1j/WYWtSYYC4ouU9PqHO0sqidkEA4Y=
 github.com/aws/aws-lambda-go v1.9.0/go.mod h1:zUsUQhAUjYzR8AuduJPCfhBuKWUaDbQiPOG+ouzmE1A=
@@ -63,6 +66,9 @@ github.com/rwcarlsen/goexif v0.0.0-20190401172101-9e8deecbddbd h1:CmH9+J6ZSsIjUK
 github.com/rwcarlsen/goexif v0.0.0-20190401172101-9e8deecbddbd/go.mod h1:hPqNNc0+uJM6H+SuU8sEs5K5IQeKccPqeSjfgcKGgPk=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
 github.com/stretchr/testify v1.3.0/go.mod h1:M5WIy9Dh21IEIfnGCwXGc5bZfKNJtfHm1UVUgZn+9EI=
+github.com/tidwall/gjson v1.6.0/go.mod h1:P256ACg0Mn+j1RXIDXoss50DeIABTYK1PULOJHhxOls=
+github.com/tidwall/match v1.0.1/go.mod h1:LujAq0jyVjBy028G1WhWfIzbpQfMO8bBZ6Tyb0+pL9E=
+github.com/tidwall/pretty v1.0.0/go.mod h1:XNkn88O1ChpSDQmQeStsy+sBenx6DDtFZJxhVysOjyk=
 github.com/tidwall/pretty v1.0.1/go.mod h1:XNkn88O1ChpSDQmQeStsy+sBenx6DDtFZJxhVysOjyk=
 github.com/whosonfirst/algnhsa v0.1.0 h1:8wVksKaz1qor2Y6+fiLEPEPxsEEvUQgSdtSTQLMrnlA=
 github.com/whosonfirst/algnhsa v0.1.0/go.mod h1:swLBXxaVTv3s6dJLhekdQCuCTshUew+xHjptRC21RG0=

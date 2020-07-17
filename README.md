@@ -1,5 +1,7 @@
 # go-wunderkammer-www
 
+Go package for web-related operations involving "wunderkammer" databases.
+
 ## Important
 
 Work in progress
@@ -50,6 +52,20 @@ $> /usr/local/go-wunderkammer-www/bin/wunderkammer-server \
 And then if you went to `http://localhost:8080/object?url=si://nasm/o/A19480187000` you would see this:
 
 ![](docs/images/nasm.jpg)
+
+### Endpoints
+
+#### /image?url={OEMBED_URL}
+
+Display the OEmbed record whose `url` property matches `{OEMBED_URL}`.
+
+#### /object?url={OEMBED_OBJECT_URI}
+
+Display the OEmbed records whose `object_uri` property matches `{OEMBED_OBJECT_URI}`.
+
+#### /random
+
+Retrieve a random OEmbed record and redirect to `/object?url={OEMBED_OBJECT_URI}`.
 
 ## See also
 
