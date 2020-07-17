@@ -1,5 +1,7 @@
 # go-wunderkammer-www
 
+![](docs/images/nasm.jpg)
+
 ## Important
 
 Work in progress
