@@ -86,6 +86,7 @@ $> curl 'http://localhost:8080/oembed?url=https://ids.si.edu/ids/download?id=NAS
   "object_uri": "si://nasm/o/A20040180000",
   "data_url": "data:image/jpeg;base64,R0lGODlhIAPgAYcAAAAAAAAARAAAiAAAzABEAABERABEiABEzACIAACIRACIiACIzADMAADMRADMiADMzADd3REREQAAVQAAmQAA3QBVAABVVQBMmQBJ3QCZAACZTACZmQCT3QDdAADdSQDdkwDungDu7iIiIgAAZgAAqgAA7gBmAABmZgBVqgBP7gCqAACqVQCqqgCe7gDuAADuTwD/VQD/qgD//zMzMwAAdwAAuwAA/wB3AAB3dwBduwBV/wC7AAC7XQC7uwCq ..."
 }
+```
 
 #### /random
 
