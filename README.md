@@ -65,7 +65,7 @@ Display the OEmbed records whose `object_uri` property matches `{OEMBED_OBJECT_U
 
 #### /oembed?url={OEMBED_URL}
 
-Output OEmbed for whose `url` property matches `{OEMBED_URL}` as JSON.
+Output OEmbed (as JSON) for the record whose `url` property matches `{OEMBED_URL}`.
 
 For example:
 
