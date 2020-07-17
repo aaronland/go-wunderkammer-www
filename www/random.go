@@ -26,7 +26,7 @@ func NewRandomObjectHandler(db oembed.OEmbedDatabase) (http.Handler, error) {
 
 		object_uri := ph.ObjectURI
 		redir_url := fmt.Sprintf("/object?url=%s", object_uri)
-		
+
 		http.Redirect(rsp, req, redir_url, http.StatusSeeOther)
 		return
 	}

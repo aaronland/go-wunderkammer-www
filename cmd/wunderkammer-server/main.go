@@ -50,7 +50,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	
+
 	random_handler, err := www.NewRandomObjectHandler(db)
 
 	if err != nil {
@@ -58,7 +58,7 @@ func main() {
 	}
 
 	mux.Handle("/random", random_handler)
-	
+
 	image_handler, err := www.NewImageHandler(db, t)
 
 	if err != nil {
@@ -74,7 +74,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	object_handler = bootstrap.AppendResourcesHandler(object_handler, bootstrap_opts)	
+	object_handler = bootstrap.AppendResourcesHandler(object_handler, bootstrap_opts)
 	mux.Handle("/object", object_handler)
 
 	s, err := server.NewServer(ctx, *server_uri)
@@ -82,6 +82,14 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
+
+	oembed_handler, err := www.NewOEmbedHandler(db)
+
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	mux.Handle("/oembed", oembed_handler)
 
 	log.Printf("Listening on %s", s.Address())
 	err = s.ListenAndServe(ctx, mux)

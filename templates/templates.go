@@ -12,7 +12,7 @@ func LoadHTMLTemplates(ctx context.Context, path_templates string) (*html_templa
 
 	t := html_template.New("orthis").Funcs(html_template.FuncMap{
 		"TemplateURL": func(raw string) html_template.URL {
-			return html_template.URL(raw)		
+			return html_template.URL(raw)
 		},
 	})
 
