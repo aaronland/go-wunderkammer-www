@@ -63,6 +63,30 @@ Display the OEmbed record whose `url` property matches `{OEMBED_URL}`.
 
 Display the OEmbed records whose `object_uri` property matches `{OEMBED_OBJECT_URI}`.
 
+#### /oembed?url={OEMBED_URL}
+
+Output OEmbed for whose `url` property matches `{OEMBED_URL}` as JSON.
+
+For example:
+
+```
+$> curl 'http://localhost:8080/oembed?url=https://ids.si.edu/ids/download?id=NASM-NASM2017-03151_screen'
+
+{
+  "version": "1.0",
+  "type": "photo",
+  "width": -1,
+  "height": -1,
+  "title": "UAV, General Atomics MQ-1L Predator A (Transferred from the United States Air Force)",
+  "url": "https://ids.si.edu/ids/download?id=NASM-NASM2017-03151_screen",
+  "author_name": "General Atomics Aeronautical Systems, Inc",
+  "author_url": "https://airandspace.si.edu/collection/id/nasm_A20040180000",
+  "provider_name": "National Air and Space Museum",
+  "provider_url": "https://airandspace.si.edu",
+  "object_uri": "si://nasm/o/A20040180000",
+  "data_url": "data:image/jpeg;base64,R0lGODlhIAPgAYcAAAAAAAAARAAAiAAAzABEAABERABEiABEzACIAACIRACIiACIzADMAADMRADMiADMzADd3REREQAAVQAAmQAA3QBVAABVVQBMmQBJ3QCZAACZTACZmQCT3QDdAADdSQDdkwDungDu7iIiIgAAZgAAqgAA7gBmAABmZgBVqgBP7gCqAACqVQCqqgCe7gDuAADuTwD/VQD/qgD//zMzMwAAdwAAuwAA/wB3AAB3dwBduwBV/wC7AAC7XQC7uwCq ..."
+}
+
 #### /random
 
 Retrieve a random OEmbed record and redirect to `/object?url={OEMBED_OBJECT_URI}`.
