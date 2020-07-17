@@ -1,7 +1,5 @@
 package main
 
-// THIS IS EARLY STAGES AND EVERYTHING IS IN FLUX
-
 import (
 	_ "github.com/mattn/go-sqlite3"
 )
@@ -20,10 +18,10 @@ import (
 
 func main() {
 
-	server_uri := flag.String("server-uri", "http://localhost:8080", "...")
+	server_uri := flag.String("server-uri", "http://localhost:8080", "A valid aaronland/go-http-server URI.")
 	dsn := flag.String("database-dsn", "sql://sqlite3/oembed.db", "A valid wunderkammer database DSN string.")
 
-	path_templates := flag.String("path-templates", "static/templates/html/*", "...")
+	path_templates := flag.String("path-templates", "static/templates/html/*", "The path to valid wunderkammer-www HTML templates.")
 
 	flag.Parse()
 
