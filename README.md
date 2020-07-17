@@ -1,7 +1,5 @@
 # go-wunderkammer-www
 
-![](docs/images/nasm.jpg)
-
 ## Important
 
 Work in progress
@@ -38,8 +36,7 @@ $> /usr/local/go-smithsonian-openaccess/bin/emit \
 	-bucket-uri file:///Users/asc/code/OpenAccess metadata/objects/NASM \
 
    | /usr/local/go-wunderkammer-image/bin/append-dataurl \
-	-timings \
-	-dither \
+	-format gif \
 
    | /usr/local/go-wunderkammer/bin/wunderkammer-db \
 	-database-dsn 'sql://sqlite3/usr/local/go-wunderkammer/nasm.db'
@@ -49,6 +46,10 @@ $> /usr/local/go-smithsonian-openaccess/bin/emit \
 $> /usr/local/go-wunderkammer-www/bin/wunderkammer-server \
 	-database-dsn 'sql://sqlite3/usr/local/go-wunderkammer/nasm.db'
 ```
+
+And then if you went to `http://localhost:8080/object?url=si://nasm/o/A19480187000` you would see this:
+
+![](docs/images/nasm.jpg)
 
 ## See also
 
