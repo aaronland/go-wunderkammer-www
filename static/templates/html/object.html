@@ -1,4 +1,7 @@
 {{ define "object" -}}
 {{template "header" . -}}
+{{ range $idx, $p := .Photos -}}
+{{ template "photo" . -}}
+{{ end -}}
 {{template "footer" . -}}
 {{ end -}}

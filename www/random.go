@@ -1,16 +1,41 @@
 package www
 
-// THIS IS EARLY STAGES AND EVERYTHING IS IN FLUX
-
 import (
 	"encoding/base64"
+	"fmt"
 	"github.com/aaronland/go-wunderkammer/oembed"
 	_ "log"
 	"net/http"
 	"regexp"
 )
 
-func NewRandomHandler(db oembed.OEmbedDatabase) (http.Handler, error) {
+func NewRandomObjectHandler(db oembed.OEmbedDatabase) (http.Handler, error) {
+
+	fn := func(rsp http.ResponseWriter, req *http.Request) {
+
+		ctx := req.Context()
+
+		ph, err := db.GetRandomOEmbed(ctx)
+
+		if err != nil {
+			http.Error(rsp, err.Error(), http.StatusInternalServerError)
+			return
+		}
+
+		// START OF please put this in a function...
+
+		object_uri := ph.ObjectURI
+		redir_url := fmt.Sprintf("/object?url=%s", object_uri)
+		
+		http.Redirect(rsp, req, redir_url, http.StatusSeeOther)
+		return
+	}
+
+	h := http.HandlerFunc(fn)
+	return h, nil
+}
+
+func NewRandomImageHandler(db oembed.OEmbedDatabase) (http.Handler, error) {
 
 	re, err := regexp.Compile(`^data:(image/(?:[a-z]+));base64,(.*)$`)
 

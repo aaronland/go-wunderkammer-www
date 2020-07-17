@@ -1,0 +1,13 @@
+{{ define "photo" -}}
+<div class="card">
+    <img src="{{ if ne .DataURL "" }}{{ TemplateURL .DataURL }}{{ else }}{{ .URL }}{{ end }}" class="card-img-top" />
+    <div class="card-body">
+	{{ .Title }}<br />
+	<a href="{{ .AuthorURL }}">{{ .ProviderName }}</a>
+    </div>
+    <ul class="card-footer">
+	<li><a href="/image?url={{ .URL }}">{{ .URL }}</a></li>
+	<li><a href="/object?url={{ .ObjectURI }}">{{ .ObjectURI }}</a></li>
+    </ul>
+</div>
+{{ end }}

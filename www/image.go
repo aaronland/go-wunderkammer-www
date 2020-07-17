@@ -1,7 +1,5 @@
 package www
 
-// THIS IS EARLY STAGES AND EVERYTHING IS IN FLUX
-
 import (
 	"errors"
 	"github.com/aaronland/go-wunderkammer-www/html"

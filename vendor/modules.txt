@@ -1,3 +1,8 @@
+# github.com/aaronland/go-http-bootstrap v0.0.5
+github.com/aaronland/go-http-bootstrap
+github.com/aaronland/go-http-bootstrap/resources
+# github.com/aaronland/go-http-rewrite v0.0.3
+github.com/aaronland/go-http-rewrite
 # github.com/aaronland/go-http-server v0.0.5
 github.com/aaronland/go-http-server
 # github.com/aaronland/go-roster v0.0.2
@@ -14,3 +19,8 @@ github.com/aws/aws-lambda-go/lambdacontext
 github.com/mattn/go-sqlite3
 # github.com/whosonfirst/algnhsa v0.1.0
 github.com/whosonfirst/algnhsa
+# github.com/whosonfirst/go-bindata-assetfs v1.0.1
+github.com/whosonfirst/go-bindata-assetfs
+# golang.org/x/net v0.0.0-20200324143707-d3edc9973b7e
+golang.org/x/net/html
+golang.org/x/net/html/atom

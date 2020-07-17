@@ -5,9 +5,10 @@ import (
 )
 
 type Header struct {
-	Title string
-	Links []Link
-	Date  time.Time
+	Title       string
+	Description string
+	Links       []Link
+	Date        time.Time
 }
 
 type Link struct {

@@ -1,7 +1,5 @@
 package www
 
-// THIS IS EARLY STAGES AND EVERYTHING IS IN FLUX
-
 import (
 	"errors"
 	"github.com/aaronland/go-wunderkammer-www/html"
@@ -30,7 +28,7 @@ func NewObjectHandler(db oembed.OEmbedDatabase, t *template.Template) (http.Hand
 
 		q := req.URL.Query()
 
-		object_uri := q.Get("uri")
+		object_uri := q.Get("url")
 
 		if object_uri == "" {
 			http.Error(rsp, "Missing uri", http.StatusBadRequest)
